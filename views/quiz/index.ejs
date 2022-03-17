@@ -1,0 +1,10 @@
+<h2>Search Quiz</h2>
+<form action= "/quiz" method ="get">
+    <label>Quiz Name</label>
+    <input type ="text" name = "name" value = "<% searchOptions.name%>">
+    <button type = "submit">Search</button>
+</form>
+<br>
+<% quiz.forEach(quiz=> { %>
+    <div><%= quiz.name %></div>
+<%})%>
